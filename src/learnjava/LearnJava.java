@@ -20,15 +20,16 @@ public class LearnJava {
     static int choosenOption = 0;
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
-        System.out.println("Please choose one of following");
-        System.out.println("1. Hello World");
-        System.out.println("2. Addition of two number.");
-        System.out.println("0. Exit.");
+        
         takeOption();
     }
     
     static void takeOption() throws IOException
     {
+        System.out.println("Please choose one of following");
+        System.out.println("1. Hello World");
+        System.out.println("2. Addition of two number.");
+        System.out.println("0. Exit.");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try{
             choosenOption = Integer.parseInt(br.readLine());

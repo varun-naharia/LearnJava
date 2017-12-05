@@ -5,13 +5,16 @@
  */
 package learnjava;
 
+import java.io.IOException;
+
 /**
  *
  * @author varunnaharia
  */
 public class HelloWorld {
     
-    public static void main(){
+    public static void main() throws IOException{
         System.out.println("Hello World !!!");
+        LearnJava.takeOption();
     }
 }

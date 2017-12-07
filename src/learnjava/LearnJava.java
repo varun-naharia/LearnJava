@@ -29,6 +29,9 @@ public class LearnJava {
         System.out.println("Please choose one of following");
         System.out.println("1. Hello World");
         System.out.println("2. Addition of two number.");
+        System.out.println("3. Square root of sum.");
+        System.out.println("4. Java Stdin and Stdout-I.");
+        System.out.println("5. Java Stdin and Stdout-II.");
         System.out.println("0. Exit.");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try{
@@ -48,6 +51,15 @@ public class LearnJava {
                 break;
             case 2:
                 AdditionOfTwoNumber.main();
+                break;
+            case 3:
+                SquareRootOfSum.main();
+                break;
+            case 4:
+                JavaStdInAndStdOut.first();
+                break;
+            case 5:
+                JavaStdInAndStdOut.second();
                 break;
             case 0:
                 

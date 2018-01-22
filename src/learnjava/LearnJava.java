@@ -26,18 +26,19 @@ public class LearnJava {
     
     static void takeOption() throws IOException
     {
-        System.out.println("Please choose one of following");
+        System.out.println("\nPlease choose one of following");
         System.out.println("1. Hello World");
         System.out.println("2. Addition of two number.");
         System.out.println("3. Square root of sum.");
         System.out.println("4. Java Stdin and Stdout-I.");
         System.out.println("5. Java Stdin and Stdout-II.");
-        System.out.println("0. Exit.");
+        System.out.println("6. Java Queue.");
+        System.out.println("0. Exit.\n");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try{
             choosenOption = Integer.parseInt(br.readLine());
         }catch(NumberFormatException nfe){
-            System.err.println("Invalid Format!");
+            System.err.println("Invalid Format!\n");
         }
         performAction();
     }
@@ -61,11 +62,14 @@ public class LearnJava {
             case 5:
                 JavaStdInAndStdOut.second();
                 break;
+            case 6:
+                JavaQueue.main();
+                break;
             case 0:
                 
                 break;
             default:
-                System.out.println("Invalid Option. Please try again");
+                System.out.println("Invalid Option. Please try again\n");
                 takeOption();
                 break;
         
